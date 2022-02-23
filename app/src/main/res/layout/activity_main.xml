@@ -18,6 +18,7 @@
             android:layout_weight="5"
             android:background="@color/black">
             <VideoView
+                android:id="@+id/videoView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|center_vertical"></VideoView>
@@ -37,10 +38,12 @@
                 android:orientation="vertical">
                 <Button
                     android:id="@+id/button"
+                    android:text="@string/video01"
+                    android:tag="batman"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:onClick="reproduceSonido"
-                    android:text="sonidos___avengers"
+                    android:onClick="reproduceVideo"
+
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
